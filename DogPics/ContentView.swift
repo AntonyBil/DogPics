@@ -20,6 +20,7 @@ struct ContentView: View {
         case retriver
     }
     
+    @StateObject var dogVM = DogViewModel()
     @State private var selectedBreed: Breed = .boxer
     
     var body: some View {
@@ -29,7 +30,9 @@ struct ContentView: View {
             Spacer()
             
             Button("Any Rundom Dog") {
-                //button action
+                Task {
+                    await dogVM.getData()
+                }
             }
             .bold()
             .buttonStyle(.borderedProminent)

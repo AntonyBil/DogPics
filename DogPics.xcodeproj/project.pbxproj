@@ -11,6 +11,7 @@
 		15BF7FC82ADD9211004C3A62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF7FC72ADD9211004C3A62 /* ContentView.swift */; };
 		15BF7FCA2ADD9213004C3A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BF7FC92ADD9213004C3A62 /* Assets.xcassets */; };
 		15BF7FCD2ADD9213004C3A62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BF7FCC2ADD9213004C3A62 /* Preview Assets.xcassets */; };
+		15BF7FD72ADDAE20004C3A62 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF7FD62ADDAE20004C3A62 /* DogViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		15BF7FC92ADD9213004C3A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15BF7FCC2ADD9213004C3A62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15BF7FD32ADD92B7004C3A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		15BF7FD62ADDAE20004C3A62 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				15BF7FD32ADD92B7004C3A62 /* Info.plist */,
 				15BF7FC52ADD9211004C3A62 /* DogPicsApp.swift */,
 				15BF7FC72ADD9211004C3A62 /* ContentView.swift */,
+				15BF7FD62ADDAE20004C3A62 /* DogViewModel.swift */,
 				15BF7FC92ADD9213004C3A62 /* Assets.xcassets */,
 				15BF7FCB2ADD9213004C3A62 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BF7FD72ADDAE20004C3A62 /* DogViewModel.swift in Sources */,
 				15BF7FC82ADD9211004C3A62 /* ContentView.swift in Sources */,
 				15BF7FC62ADD9211004C3A62 /* DogPicsApp.swift in Sources */,
 			);
