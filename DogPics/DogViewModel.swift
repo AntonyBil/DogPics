@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import AVFAudio
+import SwiftUI
 
 @MainActor
 
@@ -13,6 +15,8 @@ import Foundation
 
 
 class DogViewModel: ObservableObject {
+    
+    private var audioPlayer: AVAudioPlayer!
     
     private struct Result: Codable {
         let message: String
@@ -40,6 +44,19 @@ class DogViewModel: ObservableObject {
             print("The imageURL is: \(imageURl)")
         } catch {
             print("ERROR: Could not user URL at \(urlString) to get data and response")
+        }
+    }
+    
+    func playSound(soundName: String) {
+        guard let soundFile = NSDataAsset(name: soundName) else {
+            print("Culd not reed file name \(soundName)")
+            return
+        }
+        do {
+            audioPlayer = try AVAudioPlayer(data: soundFile.data)
+            audioPlayer.play()
+        } catch {
+            print("Error: \(error.localizedDescription)")
         }
     }
     
